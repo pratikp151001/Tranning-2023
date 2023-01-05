@@ -1,0 +1,20 @@
+table{
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.upperTable tr{
+    border: 1px solid black;
+}
+.lowertable td{
+    border: 1px solid black;
+}
+.center{
+    text-align: center;
+}
+button{
+    align-items: center;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Task1</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+    <div class="Regiform">
+        <h1 onmouseenter="h1MouseEnter()" id="h1">Form</h1>
+        <form action="#" onsubmit="return ">
+            <label>First Name:-</label>
+            <input type="text"><br>
+            <label>Middle  Name:-</label>
+            <input type="text"><br>
+            <label>Last Name:-</label>
+            <input type="text"><br>
+            <label>Select Gender:</label>
+            <br>
+            <input type="radio" name="Gender">
+            <label>Male</label>
+            <input type="radio" name="Gender">
+            <label>Female</label><br>
+            <label >Hobby:-</label><br>
+            <input type="checkbox" name="cricket" id="cricket" value="cricket">
+            <label>cricket</label>
+            <input type="checkbox" name="football" id="football" value="football">
+            <label>football</label>
+            <input type="checkbox" name="other" id="other" value="other" checked>
+            <label>other</label><br>
+            <label >Password:-</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label >Confirm Password:-</label>
+            <input type="password" name="confirm_password" id="confirm_password"><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <Button onclick="BtnClick()">Click Here</Button>
+            <a href="#imgdiv">GotoImage</a>
+            <br>
+            </div>
+            <div>
+                <img src="image.jfif" alt="Image" style="height: 400px;">
+            </div>
+            <div id="imgdiv">
+            <h2 onmouseover="h2MouseOver()" onmouseout="h2MouseOut()" id="h2">Image Section</h2>
+            <img src="smily.jpg" alt="Smily Image" style="width: 100px;" ondblclick="DbClickImg()" id="SmilyImage">
+            <a href="https://www.amazon.com/"><img src="smily.jpg" alt="smily image" style="width: 100px;"></a>
+            <br>
+            <a href="https://satvasolutions.com/"> Satva Solutions</a>
+            <a href="https://satvasolutions.com/" target="_blank"> Satva Solutions</a>
+        </form>
+    </div>
+    <div>
+     <h3>Display Tag Example</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae quis, in iusto ab veniam minus aliquid ratione
+             velit libero quod maxime ullam tenetur consequatur neque cum illo commodi? Suscipit, dolores.</p>
+        <span>span is a inline element which allows other element to enter after span tag in same line.</span>
+        <span>this is the example of the span tag</span>
+    </div>
+    <script>
+        function BtnClick(){
+            alert("Button Click ")
+        }
+        function h1MouseEnter(){
+            document.getElementById("h1").innerHTML="Registration Form"
+        }
+        function DbClickImg(){
+           alert("Double Click on Image")
+        }
+        function h2MouseOver(){
+            document.getElementById("h2").innerHTML="Image"
+        }
+        function h2MouseOut(){
+            document.getElementById("h2").innerHTML="Image Div"
+        }
+    </script>
+</body>
+</html>
