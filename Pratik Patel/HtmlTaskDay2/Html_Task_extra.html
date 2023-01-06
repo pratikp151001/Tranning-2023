@@ -65,8 +65,20 @@
           </picture>
     </div>
     <div class="customAttbt">
-        <img src="7.png" alt="image" pratik="hello">
+        <ul>
+            <li onclick="showPosition(this)" 
+                id="geek1" data-position="winner">
+                Geek1
+            </li>
+        </ul>
     </div>
-    
+    <script custom_attribute.js>
+        function showPosition(runner)
+        {
+            let  position =runner.getAttribute("data-position");
+            alert("The"+runner.innerHTML+"is"+position+".");
+        }
+
+    </script>
 </body>
 </html>
